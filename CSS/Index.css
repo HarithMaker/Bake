@@ -105,3 +105,91 @@ header {
     font-size: 1.1rem;
     padding: 23px 0;
 }
+
+/* INTRO */
+.intro {
+    display: grid;
+    /*khai báo có bao niêu cột trong 1 hàng */
+    /*Cách1 : grid-template-columns: 25% 25% 25% 25%; */
+    /*Cách2 : grid-template-columns: repeat(4,25%); */
+    /* fr: phân số - đơn vi của grid */
+    /* mỗi column 1/4 */
+    /* cách 3: tối ưu nhất */
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+/*INTRO_ gom column */
+.intro_ab1 {
+    /*khi gom column cần chú ý :
+    1.số line bắt đầu của item 
+    2.số line kết thúc của item
+    3.số cột và item đó chiếm
+    */
+    /* grid-column: số line bắt đầu / số line kết thúc; */
+    grid-column: 2 / 4;
+    /* cách viết khác
+     grid-column: số line bắt đầu / span số cột chiếm
+    grid-column: 2 / span 2;
+     */
+}
+
+.intro_bake {
+    /* grid-column: 1 / 3; */
+    grid-column: 1 / span 2;
+}
+
+.intro_ab4 {
+    /* grid-column: 3 / 5; */
+    grid-column: 3 / span 2;
+
+}
+
+.intro_item img {
+    width: 100%;
+    display: block;
+}
+
+.intro_item {
+    display: flex;
+    /* justify-content: center;
+    thẻ con bằng thẻ cha nên justìy ko có tác dụng */
+    align-items: center;
+    text-align: center;
+}
+
+.intro_text {
+    padding: 0 32px;
+
+}
+
+.intro_item h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.intro_item p {
+    font-size: 0.875rem;
+    color: #c1c1c1;
+    line-height: 29px;
+}
+
+.intro .intro_item:first-child {
+    background-color: #4e2a84;
+
+}
+
+.intro .intro_item:nth-child(3) {
+    background-color: #ff0e83;
+}
+.intro .intro_item:nth-child(4) {
+    background-color: #ed6498;
+}
+.intro .intro_item:nth-child(6) {
+    background-color: #836eaa;
+}
+.intro .intro_item:nth-child(8) {
+    background-color: #4e2a84;
+}
