@@ -34,6 +34,14 @@ button:hover {
     border: #ff0e83;
 }
 
+h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
 /* HEADER */
 header {
     position: sticky;
@@ -184,12 +192,101 @@ header {
 .intro .intro_item:nth-child(3) {
     background-color: #ff0e83;
 }
+
 .intro .intro_item:nth-child(4) {
     background-color: #ed6498;
 }
+
 .intro .intro_item:nth-child(6) {
     background-color: #836eaa;
 }
+
 .intro .intro_item:nth-child(8) {
     background-color: #4e2a84;
+}
+
+/* NUMBER */
+.number {
+    padding: 70px 0;
+}
+
+.number_content {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+/* p:first-of-type: tìm thằng p đầu tiên dù trước đó có loại thẻ khác
+p:last-of-type: tìm thằng p cuối cùng dù ở dưới có loại thẻ khác
+p:first-child: phải là thẻ p đầu tiên và ở vị trí đàu tiền của thẻ
+p:nth-child(): xét theo vị trí hiện tại của thẻ P chứ không phải thẻ thứ mấy */
+.number_item p:first-child {
+    font-size: 2rem;
+    color: #4e2a84;
+    font-weight: 600;
+}
+
+.number_item p:last-of-type {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    padding: 24px 0;
+}
+
+/* SERVICE */
+.services {
+    background-image: url("../img/s1.jpg");
+    background-size: cover;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.services h2 {
+    color: white;
+}
+
+.services_content {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.services_item {
+    padding: 0 20px;
+}
+
+.services_item i {
+    width: 105px;
+    height: 105px;
+    line-height: 105px;
+    border: 1px solid #4e2a84;
+    border-radius: 50%;
+    background-color: white;
+    color: #4e2a84;
+    font-size: 3.75rem;
+    transition: all 0.5s;
+}
+
+.services_item h3 {
+    font-size: 1.5rem;
+    margin: 17px 0;
+    font-weight: 500;
+}
+
+.services_item p {
+    font-size: 0.875rem;
+    line-height: 25px;
+    padding-bottom: 12px;
+}
+
+.services_ite button {
+    padding: 12px 27px;
+    border-width: 2px;
+    /*vì đã khai báo trc đó nên chỉ sửa độ dày*/
+}
+
+.services_item:hover i {
+    color: #ff0e83;
 }

@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- GOOGLE FONT -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- FONT AWSOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./CSS/Index.css">
     <title>BAKE</title>
@@ -80,15 +84,75 @@
             <img src="./img/ab4.jpg" alt="intro4">
         </div>
     </section>
-    <section class="number"></section>
-    <section class="services"></section>
+    <section class="number">
+        <div class="number_content">
+            <div class="number_item">
+                <p class="counter">3500</p>
+                <p>Coffee</p>
+            </div>
+            <div class="number_item">
+                <p class="counter">650</p>
+                <p>Happy Client</p>
+            </div>
+            <div class="number_item">
+                <p class="counter">10</p>
+                <p>Experience</p>
+            </div>
+            <div class="number_item">
+                <p class="counter">1010</p>
+                <p>Expert Worker</p>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <h2>OUR SERVICE</h2>
+        <div class="services_content">
+            <div class="services_item">
+                <i class="fa fa-adjust"></i>
+                <H3> Tasty Cakes</H3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                <button>Learn More</button>
+            </div>
+            <div class="services_item">
+                <i class="fa fa-snowflake"></i>
+                <H3> Creativity</H3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                <button>Learn More</button>
+            </div>
+            <div class="services_item">
+                <i class="fa fa-chart-pie"></i>
+                <H3> Tradition</H3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                <button>Learn More</button>
+            </div>
+            <div class="services_item">
+                <i class="fab fa-slideshare"></i>
+                <H3> Quality</H3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
     <section class="gallery"></section>
     <section class="team"></section>
     <section class="feedback"></section>
     <section class="contact"></section>
     <footer></footer>
+    <!-- Thư viện hỗ trợ JQuery giúp chạy hiệu ứng Animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- JQuery Waypoints
+    phải để dưới thư viện JQuery vì thằng waypoint sử dụng hàm của Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Count Up JS -->
+    <script src="./js/jquery.countup.js"></script>
+    <script>
+        $('.counter').countUp();
 
-
+    </script>
 </body>
 
 </html>
