@@ -322,7 +322,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit adipisci
                         veritatis officia autem! Molestiae id rerum optio quas blanditiis molestias. <i class="fa fa-quote-right"></i>
                          </p>
-                         <p>MARK</p>
+                         <p class="feedback_name">MARK</p>
                     </div>
                 
                 <div class="item">
@@ -330,14 +330,14 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit adipisci
                         veritatis officia autem! Molestiae id rerum optio quas blanditiis molestias. <i class="fa fa-quote-right"></i>
                          </p>
-                         <p>APPLY</p>
+                         <p class="feedback_name">APPLY</p>
                 </div>
                 <div class="item">
                     <p><i class="fa fa-quote-left"></i> 
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit adipisci
                         veritatis officia autem! Molestiae id rerum optio quas blanditiis molestias. <i class="fa fa-quote-right"></i>
                          </p>
-                         <p>WILLSON</p>
+                         <p class="feedback_name">WILLSON</p>
                 </div>
             </div>
         </div>
@@ -367,16 +367,13 @@
     loop:true,
     margin:10,
     nav:false,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
     responsive:{
-        0:{
+        0:{  // màn hình từ 0px trở lên thì nó xuất hiện 1 item
             items:1
         },
-        600:{
-            items:1
-        },
-        1000:{
-            items:1
-        }
     }
 })
     </SCRipt>
