@@ -524,6 +524,80 @@ tránh nếu 1 trang web ta dùng nhiều thư viện owl carousel giống nhau,
 .feedback_content .owl-theme .owl-dots .owl-dot span {
     background-color: rgba(0, 0, 0, 0.8);
 }
+
 .feedback_content .owl-theme .owl-dots .owl-dot.active span {
     background-color: #ff0e83;
+}
+
+/* CONTACT */
+.contact {
+    padding: 70px 0;
+}
+
+.contact_form form {
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px 30px;
+}
+
+.contact_form form input {
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.contact_form input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%)   ;
+}
+
+.contact_form form textarea,
+.contact_form form button {
+    padding: 15px;
+    grid-column: 1 / span 2;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.contact_form form textarea{
+    border: 1px solid black;
+    resize: none;    
+}
+.contact_form form textarea:focus{
+    outline: none;
+}
+.contact_form form textarea::placeholder{
+   color: black;
+}
+.contact_form form button{
+    border-radius: 0;
+    color: black;
+    transition: all .5s;
+}
+.contact_form form button:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+}
+.contact_map iframe{
+    width: 100%;
+    margin-top: 50px;
+}
+.contact_info{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 50px;
+}
+.contact_info i{
+    font-size: 2rem;
+    color: #4e2a84;
+}
+.contact_info p{
+    font-size: 0.8rem;
+    margin: 10px 0;
 }

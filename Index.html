@@ -28,7 +28,7 @@
             <Nav>
                 <ul>
                     <li class="active"><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
+                    <li><a href="./Demo/Demo.html" target="_blank">about</a></li>
                     <li><a href="#">service</a></li>
                     <li><a href="#">gallery</a></li>
                     <li><a href="#">clients</a></li>
@@ -316,33 +316,71 @@
         <h2>TESTIMONIALS</h2>
         <div class="feedback_content">
             <div class="owl-carousel owl-theme">
-                
-                    <div class="item">
-                        <p><i class="fa fa-quote-left"></i> 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit adipisci
-                        veritatis officia autem! Molestiae id rerum optio quas blanditiis molestias. <i class="fa fa-quote-right"></i>
-                         </p>
-                         <p class="feedback_name">MARK</p>
-                    </div>
-                
+
                 <div class="item">
-                    <p><i class="fa fa-quote-left"></i> 
+                    <p><i class="fa fa-quote-left"></i>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit adipisci
-                        veritatis officia autem! Molestiae id rerum optio quas blanditiis molestias. <i class="fa fa-quote-right"></i>
-                         </p>
-                         <p class="feedback_name">APPLY</p>
+                        veritatis officia autem! Molestiae id rerum optio quas blanditiis molestias. <i
+                            class="fa fa-quote-right"></i>
+                    </p>
+                    <p class="feedback_name">MARK</p>
+                </div>
+
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit adipisci
+                        veritatis officia autem! Molestiae id rerum optio quas blanditiis molestias. <i
+                            class="fa fa-quote-right"></i>
+                    </p>
+                    <p class="feedback_name">APPLY</p>
                 </div>
                 <div class="item">
-                    <p><i class="fa fa-quote-left"></i> 
+                    <p><i class="fa fa-quote-left"></i>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit adipisci
-                        veritatis officia autem! Molestiae id rerum optio quas blanditiis molestias. <i class="fa fa-quote-right"></i>
-                         </p>
-                         <p class="feedback_name">WILLSON</p>
+                        veritatis officia autem! Molestiae id rerum optio quas blanditiis molestias. <i
+                            class="fa fa-quote-right"></i>
+                    </p>
+                    <p class="feedback_name">WILLSON</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="contact"></section>
+    <section class="contact">
+        <h2>CONTACT</h2>
+        <div class="contact_form">
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="number" placeholder="Number">
+                <textarea cols="30" rows="10" placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+        <div class="contact_map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250476.1872934904!2d107.12005932726936!3d11.210525060336947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31748a9b4f56dd05%3A0x726e52d4550d42a2!2zxJDhu4tuaCBRdcOhbiwgxJDhu5NuZyBOYWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1682362802942!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact_info">
+            <div class="contact_item">
+                <i class="fa fa-home"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="contact_item">
+                <i class="fa fa-phone"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="contact_item">
+                <i class="fa fa-envelope-open"></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
     <footer></footer>
     <!-- Thư viện hỗ trợ JQuery giúp chạy hiệu ứng Animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
@@ -364,18 +402,18 @@
     <script src="./js/owl.carousel.min.js"></script>
     <SCRipt>
         $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:false,
-    autoplay:true,
-    autoplayTimeout:1000,
-    autoplayHoverPause:true,
-    responsive:{
-        0:{  // màn hình từ 0px trở lên thì nó xuất hiện 1 item
-            items:1
-        },
-    }
-})
+            loop: true,
+            margin: 10,
+            nav: false,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {  // màn hình từ 0px trở lên thì nó xuất hiện 1 item
+                    items: 1
+                },
+            }
+        })
     </SCRipt>
 </body>
 
