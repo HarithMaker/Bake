@@ -4,7 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
 body {
     /* font-size: 18px; */
     /* 1rem = 18px */
@@ -46,6 +49,9 @@ h2 {
 header {
     background-color: #4e2a84;
     padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
 }
 
 .header_content {
@@ -409,6 +415,17 @@ p:nth-child(): xét theo vị trí hiện tại của thẻ P chứ không phả
 
 .team_item {
     position: relative;
+    overflow: hidden;
+
+}
+.team_item .team_detail
+{
+    /* opacity: 1; */
+    transform: translateX(-100%);
+}
+.team_item:hover .team_detail
+{
+    transform: translateX(0%);
 }
 
 .team_title {
@@ -482,6 +499,7 @@ p:nth-child(): xét theo vị trí hiện tại của thẻ P chứ không phả
     color: #ff0e83;
     border-color: #ff0e83;
 }
+
 
 /* FEEDBACK */
 .feedback {
@@ -690,4 +708,33 @@ footer {
 }
 .footer_coppyright span{
     color: #ff0e83;
+}
+audio{
+    position: fixed;
+    width: 100px;
+    height: 30px;
+    left: 10px;
+    bottom: 10px;
+}
+/* Back to top */
+.backToTop{
+    position:fixed;
+    right:50px;
+    bottom:50px;
+    visibility: hidden;
+    opacity: 0;
+}
+.cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+  }
+.backToTop i{
+    color:#0BBBCC;
+    border:2px solid #0BBBCC;
+    width: 40px;
+    height: 40px;
+    font-size:2rem;
+    text-align: center;
+    line-height:36px;
+    border-radius:50%
 }

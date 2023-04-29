@@ -26,15 +26,16 @@
         <div class="header_content">
             <p>bake</p>
             <Nav>
-                <ul>
-                    <li class="active"><a href="#">home</a></li>
-                    <li><a href="./Demo/Demo.html" target="_blank">about</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">gallery</a></li>
-                    <li><a href="#">clients</a></li>
-                    <li><a href="#">contact</a></li>
+            <nav>
+                <ul id="mainNav">
+                    <li class="active"><a href="#">HOME</a></li>
+                    <li><a href="#intro">ABOUT</a></li>
+                    <li><a href="#services">SERVICE</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#feedback">CLIENTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
-            </Nav>
+            </nav>
         </div>
     </header>
     <section class="carousel">
@@ -44,7 +45,7 @@
             <button>LEARN MORE</button>
         </div>
     </section>
-    <section class="intro">
+    <section class="intro" id="intro">
         <div class="intro_item intro_text">
             <div>
                 <h3>Tradition</h3>
@@ -92,24 +93,24 @@
     <section class="number">
         <div class="number_content">
             <div class="number_item">
-                <p class="counter">3500</p>
+                <p class="counter">8888</p>
                 <p>Coffee</p>
             </div>
             <div class="number_item">
-                <p class="counter">650</p>
+                <p class="counter">8888</p>
                 <p>Happy Client</p>
             </div>
             <div class="number_item">
-                <p class="counter">10</p>
+                <p class="counter">50</p>
                 <p>Experience</p>
             </div>
             <div class="number_item">
-                <p class="counter">1010</p>
+                <p class="counter">8888</p>
                 <p>Expert Worker</p>
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services"id="services">
         <h2>OUR SERVICE</h2>
         <div class="services_content">
             <div class="services_item">
@@ -138,7 +139,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery">
+    <section class="gallery"id="gallery">
         <H2>OUR GALLERY</H2>
         <div class="gallery_content">
             <!--thẻ ngữ nghĩa dành cho Img <figure></figure> -->
@@ -202,7 +203,7 @@
     <section class="team">
         <h2>BAKE TEAM</h2>
         <div class="team_content">
-            <div class="team_item">
+            <div class="team_item team_item1 ">
                 <img src="./img/t1.jpg" alt="team 1">
                 <div class="team_title">
                     <h3>Duc Huy</h3>
@@ -220,7 +221,7 @@
                     </div>
                 </div>
             </div>
-            <div class="team_item">
+            <div class="team_item team_item2">
                 <img src="./img/t2.jpg" alt="team 2">
                 <div class="team_title">
                     <h3>Duc Huy</h3>
@@ -238,7 +239,7 @@
                     </div>
                 </div>
             </div>
-            <div class="team_item">
+            <div class="team_item team_item3">
                 <img src="./img/t3.jpg" alt="team 3">
                 <div class="team_title">
                     <h3>Duc Huy</h3>
@@ -256,7 +257,7 @@
                     </div>
                 </div>
             </div>
-            <div class="team_item">
+            <div class="team_item team_item4">
                 <img src="./img/t4.jpg" alt="team 4">
                 <div class="team_title">
                     <h3>Duc Huy</h3>
@@ -274,7 +275,7 @@
                     </div>
                 </div>
             </div>
-            <div class="team_item">
+            <div class="team_item team_item5">
                 <img src="./img/t2.jpg" alt="team 5">
                 <div class="team_title">
                     <h3>Duc Huy</h3>
@@ -292,7 +293,7 @@
                     </div>
                 </div>
             </div>
-            <div class="team_item">
+            <div class="team_item team_item6">
                 <img src="./img/t1.jpg" alt="team 6">
                 <div class="team_title">
                     <h3>Duc Huy</h3>
@@ -312,7 +313,7 @@
             </div>
         </div>
     </section>
-    <section class="feedback">
+    <section class="feedback"id="feedback">
         <h2>TESTIMONIALS</h2>
         <div class="feedback_content">
             <div class="owl-carousel owl-theme">
@@ -345,7 +346,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section class="contact"id="contact">
         <h2>CONTACT</h2>
         <div class="contact_form">
             <form action="">
@@ -444,42 +445,72 @@
             </div>
         </div>
         <div class="footer_coppyright">
-            <p> &copy; 2020 Lorem ipsum dolor sit amet. | Design by <span>Đức Huy</span></p>
+            <p> &copy; 2023 Lorem ipsum dolor sit amet. | Design by <span>Đức Huy</span></p>
+
+            <audio controls autoplay>
+                <source src="./Mp3/music1.mp3" type="audio/mpeg">
+            </audio>
+
         </div>
+
     </footer>
-    <!-- Thư viện hỗ trợ JQuery giúp chạy hiệu ứng Animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- JQuery Waypoints
+    <!-- Back to top -->
+    <a href="#" class="backToTop cd-top text-replace js-cd-top">
+        <i class="fa fa-angle-up"></i>
+        <!-- Thư viện hỗ trợ JQuery giúp chạy hiệu ứng Animation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+            integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- JQuery Waypoints
     phải để dưới thư viện JQuery vì thằng waypoint sử dụng hàm của Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Count Up JS -->
-    <script src="./js/jquery.countup.js"></script>
-    <script>
-        $('.counter').countUp();
-    </script>
-    <!-- LIGHTBOX JS -->
-    <script src="./js/lightbox.js"></script>
-    <!-- THƯ VIÊN OWL carousel 2 -->
-    <script src="./js/owl.carousel.min.js"></script>
-    <SCRipt>
-        $('.owl-carousel').owlCarousel({
-            loop: true,
-            margin: 10,
-            nav: false,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: true,
-            responsive: {
-                0: {  // màn hình từ 0px trở lên thì nó xuất hiện 1 item
-                    items: 1
-                },
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+            integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- Count Up JS -->
+        <script src="./js/jquery.countup.js"></script>
+        <script>
+            $('.counter').countUp();
+        </script>
+        <!-- LIGHTBOX JS -->
+        <script src="./js/lightbox.js"></script>
+        <!-- THƯ VIÊN OWL carousel 2 -->
+        <script src="./js/owl.carousel.min.js"></script>
+        <SCRipt>
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: false,
+                autoplay: true,
+                autoplayTimeout: 1000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {  // màn hình từ 0px trở lên thì nó xuất hiện 1 item
+                        items: 1
+                    },
+                }
+            })
+        </SCRipt>
+        <!-- Back to Top JS -->
+        <script src="./js/util.js"></script>
+        <script src="./js/main-backToTop.js"></script>
+
+        <!-- Navigation bar JS -->
+        <script>
+            // thẻ ul
+            var mainNav = document.getElementById("mainNav");
+            //các thẻ con li
+            var listNav = mainNav.getElementsByTagName("li");
+            for (var i = 0; i < listNav.length; i++) {
+                listNav[i].addEventListener("click", function () {
+                    //tìm thẻ đang được gắn class active
+                    var current = document.querySelector("#mainNav .active");
+                    //Xóa class active của thẻ đang được gắn
+                    current.className = current.className.replace("active", "");
+                    //thêm class active vào cho thẻ li được click                
+                    this.className += "active";
+                });
             }
-        })
-    </SCRipt>
+        </script>
 </body>
 
 </html>
